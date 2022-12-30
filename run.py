@@ -1,3 +1,3 @@
 #!/bin/bash
 
-flask --debug run 
+flask --debug --app main run 

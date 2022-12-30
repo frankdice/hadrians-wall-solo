@@ -8,7 +8,7 @@ app.secret_key = "localtestyaaaay"
 @app.route("/")
 def index():
     if session.get('game_state', False) == False:
-        start_game()
+        start_game(difficulty="easy")
     return render_template("index.html", header=header_data(), player_cards=player_cards(), pict_cards=pict_cards())
 
 @app.route("/nextround")

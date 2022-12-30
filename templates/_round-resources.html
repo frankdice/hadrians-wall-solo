@@ -1,0 +1,35 @@
+<div class="col-1">
+    <b style="padding-left:3px;">Round Resources</b>
+    <table class="table table-sm" style="margin-bottom: 5px; border: 1px;">
+        <tbody>
+            <tr>
+                <td>Soldier</td>
+                <td class="hw-soldier">{{ session.game_state.round_resources.soldier }}</td>
+            </tr>
+            <tr>
+                <td>Builder</td>
+                <td class="hw-builder">{{ session.game_state.round_resources.builder }}</td>
+            </tr>
+            <tr>
+                <td>Servant</td>
+                <td class="hw-servant">{{ session.game_state.round_resources.servant }}</td>
+            </tr>
+            <tr>
+                <td>Civilian</td>
+                <td class="hw-civilian">{{ session.game_state.round_resources.civilian }}</td>
+            </tr>
+            <tr>
+                <td>Stone</td>
+                <td class="hw-stone">{{ session.game_state.round_resources.stone }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered" style="margin-bottom: 5px; border: 1px;">
+        <tbody>
+            <tr>
+                <td>Bonus Picts</td>
+            <td class="hw-soldier">{{ session.game_state.round_market_pict_cards }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

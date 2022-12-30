@@ -1,0 +1,49 @@
+<div class="col-1">
+    <b>Ongoing Resources</b>
+    <table class="table table-sm" style="margin-bottom: 5px; border: 1px">
+        <tbody>
+            <tr>
+                <td><a href="/ongoing/stone/decrement">-</a></td>
+                <td>Stone</td>
+                <td class="hw-increment-padding"><a href="/ongoing/stone/increment">+</a></td>
+                <td class="hw-stone">{{ session.game_state.ongoing_resources.stone }}</td>
+            </tr>
+            <tr>
+                <td><a href="/ongoing/builder/decrement">-</a></td>
+                <td>Builder</td>
+                <td class="hw-increment-padding"><a href="/ongoing/builder/increment">+</a></td>
+                <td class="hw-builder">{{ session.game_state.ongoing_resources.builder }}</td>
+            </tr>
+            <tr>
+                <td><a href="/ongoing/civilian/decrement">-</a></td>
+                <td>Civilian</td>
+                <td class="hw-increment-padding"><a href="/ongoing/civilian/increment">+</a></td>
+                <td class="hw-civilian">{{ session.game_state.ongoing_resources.civilian }}</td>
+            </tr>
+            <tr>
+                <td><a href="/ongoing/renown/decrement">-</a></td>
+                <td>Renown</td>
+                <td class="hw-increment-padding"><a href="/ongoing/renown/increment">+</a></td>
+                <td class="hw-renown">{{ session.game_state.ongoing_resources.renown }}</td>
+            </tr>
+            <tr>
+                <td><a href="/ongoing/piety/decrement">-</a></td>
+                <td>Piety</td>
+                <td class="hw-increment-padding"><a href="/ongoing/piety/increment">+</a></td>
+                <td class="hw-piety">{{ session.game_state.ongoing_resources.piety }}</td>
+            </tr>
+            <tr>
+                <td><a href="/ongoing/valour/decrement">-</a></td>
+                <td>Valour</td>
+                <td class="hw-increment-padding"><a href="/ongoing/valour/increment">+</a></td>
+                <td class="hw-valour">{{ session.game_state.ongoing_resources.valour }}</td>
+            </tr>
+            <tr>
+                <td><a href="/ongoing/discipline/decrement">-</a></td>
+                <td>Discipline</td>
+                <td class="hw-increment-padding"><a href="/ongoing/discipline/increment">+</a></td>
+                <td class="hw-discipline">{{ session.game_state.ongoing_resources.discipline }}</td>
+            </tr>
+        </tbody>
+    </table>    
+</div>

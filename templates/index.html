@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Put an optional new row up here to select the new player card every turn -->
+
+
+<!-- Main Game Window -->
+<div class="row text-center g-0">
+  <div class="col-1">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-info">New Game</li>
+      <table class="table" style="margin-bottom: 5px;">
+        <tbody>
+          <tr>
+            <td class="hw-easy"><a style="color:black" href="/newgame/easy">E</a></td>
+            <td class="hw-medium"><a style="color:black" href="/newgame/medium">M</a></td>
+            <td class="hw-hard"><a style="color:black" href="/newgame/hard">H</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </ul>
+  </div>
+
+  {% if session.game_state.state == "player_cards" %}
+    {% include "_select_player_cards.html" %}
+  {% elif session.game_state.state == "pict_attack" %}  
+    {% include "_current_round_market.html" %}
+  {% elif session.game_state.state == "next_round" %}  
+    {% include "_pict_attack.html" %}
+  {% endif %}
+
+  {% for i in [1,2,3,4,5,6] %}
+  <div class="col"></div>
+  {% endfor %}
+
+  <div class="col-1">
+    <ul class="list-group">
+        {% if session.game_state.state == "next_round" and session.game_state.round == 6 %}
+        <li class="list-group-item list-group-item">
+        Finished!
+        {% elif session.game_state.state == "start" %}
+        <li class="list-group-item list-group-item"><a href="/nextround">
+        Start Game
+        </a>
+        {% elif session.game_state.state == "player_cards" %}
+        <li class="list-group-item list-group-item">
+        Player Cards
+        {% elif session.game_state.state == "pict_attack" %}
+        <li class="list-group-item list-group-item"><a href="/pictattack">
+        Pict Attack
+        </a>
+        {% else %}
+        <li class="list-group-item list-group-item"><a href="/nextround">
+        Next Round
+        </a>
+        {% endif %}
+        </li>
+        <li class="list-group-item list-group-item">
+          <a href="/debug">Debug</a>
+        </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Second Row -->
+<div class="row text-center g-0">
+<!-- First column is for ongoing resources -->
+{% include "_ongoing-resources.html" %}
+
+  <!-- Six columns for Hadrian's Wall top row layout -->
+  {%- for row in range(header|length) %}
+  <div class="col">
+    <div class="card">
+      <div class="card-body" style="padding-bottom: 0px;padding-top: 5px">
+        <h5 class="card-title {{ 'hw-selected' if header[row].round == session.game_state.round}}">Round {{ header[row].round }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted" style="background-color:lightgrey">{{ header[row].vp }} VP</h6>
+        <table class="table" style="margin-bottom: 5px;">
+          <tbody>
+            <tr>
+              <td class="hw-easy {{ 'hw-selected' if session.game_state.difficulty == 'easy' }}">{{ header[row].easy }}</td>
+              <td class="hw-medium {{ 'hw-selected' if session.game_state.difficulty == 'medium' }}">{{ header[row].medium }}</td>
+              <td class="hw-hard {{ 'hw-selected' if session.game_state.difficulty == 'hard' }}">{{ header[row].hard }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body" style="padding-bottom: 0px;padding-top: 5px">
+        <h5 class="card-title">
+          {% if (session.game_state.player_cards_selected|length) >= header[row].round %}
+            {% set selected_card = session.game_state.player_cards_selected[header[row].round - 1] %}
+            <p class="card-text" style="margin-bottom: 0px;">
+              {{ player_cards[selected_card].task }}
+            </p>
+            <!-- Consistent spacing because I have no idea how to do it correctly -->
+            {% if player_cards[selected_card].task in ["Final Disdain", "Large Buildings", "Resource Production", "Completed Cohorts", "Filled Temples", "Collected Goods"] %}
+              <br>
+            {% endif %}
+            <table class="table table-sm table-bordered" style="margin-bottom: 0px;">
+              <tbody>
+                  <tr>
+                      {% for i in player_cards[selected_card].task_count_vp %}
+                      <td><b>{{ i }}</b></td>
+                      {% endfor %}
+                  </tr>
+                  <tr>
+                      {% for i in player_cards[selected_card].task_count_vp %}
+                      <td>{{ player_cards[selected_card].task_count_vp[i] }} VP</td>
+                      {% endfor %}
+                  </tr>
+              </tbody>
+          </table>
+          {% endif %}
+        </h5>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+  <!-- Round-specific resources (largely from cards and choices made) -->
+  {% include "_round-resources.html" %}
+</div>
+
+{% if session.game_state.debug == True %}
+<div class="row text-center g-0">
+  {{ session }}
+</div>
+
+<div class="row text-center g-0">
+  <p>Pict Resource Card:<br>
+  {{ pict_cards[session.game_state.pict_card_order[session.game_state.pict_card_location - 1]] }}
+  </p>
+</div>
+<div class="row text-center g-0">
+  <p>Player Card Not Selected:<br>
+  {{ player_cards[session.game_state.player_card_not_selected] }}
+  </p>
+</div>
+
+{% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,53 @@
+<!-- This is ugly - Player card location of the randomly generated list, based on the static list -->
+{%- set market_card_player = player_cards[session.game_state.player_card_not_selected] %}
+{%- set market_card_enemy = player_cards[session.game_state.enemy_player_card_order[session.game_state.enemy_player_card_location]] %}
+
+<div class="col-6"></div>
+{%- for card in [market_card_player, market_card_enemy] %}
+<div class="col-2" style="padding-bottom: 5px;">
+    <div class="card">
+        <div class="card-body" style="padding-bottom: 0px;padding-top: 5px">
+            <h5 class="card-title">
+                {% if loop.index == 1 %}
+                Player
+                {% else %}
+                <a href="/enemymarket">Enemy (Use)</a>
+                {% endif %}
+            </h5>
+            <table class="table table-sm text-start" style="margin-bottom: 0px;">
+                <tbody>
+                    <tr>
+                        <td><b>Shape:</b></td>
+                        <td>
+                            <table class="table table-sm table-bordered mb-0 text-center">
+                                <tbody>
+                                    {%- if card.shape == "l" %}
+                                    <tr><td></td><td></td><td class="hw-shape"></td></tr>
+                                    <tr><td class="hw-shape"></td><td class="hw-shape"></td><td class="hw-shape"></td></tr>
+                                    {%- elif card.shape == "s" %}
+                                    <tr><td></td><td class="hw-shape"></td><td class="hw-shape"></td></tr>
+                                    <tr><td class="hw-shape"></td><td class="hw-shape"></td><td></td></tr>
+                                    {%- elif card.shape == "t" %}
+                                    <tr><td></td><td class="hw-shape"></td><td></td></tr>
+                                    <tr><td class="hw-shape"></td><td class="hw-shape"></td><td class="hw-shape"></td></tr>
+                                    {%- elif card.shape == "square" %}
+                                    <tr><td class="hw-shape"></td><td class="hw-shape"></td></tr>
+                                    <tr><td class="hw-shape"></td><td class="hw-shape"></td></tr>
+                                    {%- elif card.shape == "long" %}
+                                    <tr><td></td><td></td><td></td><td></td></tr>
+                                    <tr><td class="hw-shape"></td><td class="hw-shape"></td><td class="hw-shape"></td><td class="hw-shape"></td></tr>
+                                    {%- endif %}
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Market:</b></td>
+                        <td class="text-center">{{ card.market }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{%- endfor %}

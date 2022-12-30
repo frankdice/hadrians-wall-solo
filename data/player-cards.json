@@ -1,0 +1,146 @@
+[
+    {
+        "name": "Fighter",
+        "task": "Completed Cohorts",
+        "task_count_vp": {
+            "1": "1",
+            "2": "2",
+            "3": "3" 
+        },
+        "shape": "square",
+        "resources": ["soldier"],
+        "market": 5
+    },
+    {
+        "name": "Planner",
+        "task": "Completed Citizen Tracks",
+        "task_count_vp": {
+            "2": "1",
+            "4": "2",
+            "5": "3" 
+        },
+        "shape": "s",
+        "resources": ["servant", "civilian"],
+        "market": 1
+    },
+    {
+        "name": "Trainer",
+        "task": "Total Gladiator Strength",
+        "task_count_vp": {
+            "4": "1",
+            "8": "2",
+            "12": "3" 
+        },
+        "shape": "s",
+        "resources": ["servant", "stone"],
+        "market": 4
+    },
+    {
+        "name": "Engineer",
+        "task": "Large Buildings",
+        "task_count_vp": {
+            "2": "1",
+            "4": "2",
+            "6": "3" 
+        },
+        "shape": "l",
+        "resources": ["builder", "stone"],
+        "market": 2
+    },
+    {
+        "name": "Pontiff",
+        "task": "Filled Temples",
+        "task_count_vp": {
+            "1": "1",
+            "2": "2",
+            "3": "3" 
+        },
+        "shape": "t",
+        "resources": ["servant", "servant"],
+        "market": 2
+    },
+    {
+        "name": "Architect",
+        "task": "Constructed Landmarks",
+        "task_count_vp": {
+            "1": "1",
+            "2": "2",
+            "3": "3" 
+        },
+        "shape": "long",
+        "resources": ["stone", "stone"],
+        "market": 2
+    },
+    {
+        "name": "Vanguard",
+        "task": "Completed Wall Guard Sections",
+        "task_count_vp": {
+            "1": "1",
+            "2": "2",
+            "3": "3" 
+        },
+        "shape": "s",
+        "resources": ["builder", "civilian"],
+        "market": 2
+    },
+    {
+        "name": "Ranger",
+        "task": "Completed Scout Columns",
+        "task_count_vp": {
+            "1": "1",
+            "3": "2",
+            "5": "3" 
+        },
+        "shape": "long",
+        "resources": ["soldier"],
+        "market": 6
+    },
+    {
+        "name": "Aristocrat",
+        "task": "Final Disdain",
+        "task_count_vp": {
+            "4": "1",
+            "2": "2",
+            "0": "3" 
+        },
+        "shape": "t",
+        "resources": ["builder", "civilian"],
+        "market": 1
+    },
+    {
+        "name": "Defender",
+        "task": "Completed Wall Sections",
+        "task_count_vp": {
+            "1": "1",
+            "2": "2",
+            "3": "3" 
+        },
+        "shape": "l",
+        "resources": ["builder", "stone"],
+        "market": 1
+    },
+    {
+        "name": "Forager",
+        "task": "Resource Production",
+        "task_count_vp": {
+            "3": "1",
+            "6": "2",
+            "9": "3" 
+        },
+        "shape": "t",
+        "resources": ["servant", "stone"],
+        "market": 3
+    },
+    {
+        "name": "Merchant",
+        "task": "Collected Goods",
+        "task_count_vp": {
+            "4": "1",
+            "6": "2",
+            "8": "3" 
+        },
+        "shape": "square",
+        "resources": ["civilian", "stone"],
+        "market": 4
+    }
+]

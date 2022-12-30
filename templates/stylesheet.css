@@ -1,0 +1,49 @@
+td.hw-easy {
+    background-color: lightgreen;
+}
+
+td.hw-medium {
+    background-color: yellow;
+}
+
+td.hw-hard {
+    background-color: lightcoral;
+}
+
+h5.hw-selected, td.hw-selected {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+td.hw-shape {
+    background-color: grey;
+}
+
+td.hw-soldier, td.hw-valour {
+    background-color:black;
+    color:white
+}
+
+td.hw-builder, td.hw-discipline {
+    background-color:lightblue;
+}
+
+td.hw-servant, td.hw-piety {
+    background-color:violet;
+}
+
+td.hw-civilian {
+    background-color:yellow;
+}
+
+td.hw-stone {
+    background-color:lightgrey;
+}
+
+td.hw-increment-padding {
+    padding-right: 10px;
+}
+
+td.hw-renown {
+    background-color:goldenrod;
+}

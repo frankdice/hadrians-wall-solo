@@ -1,0 +1,578 @@
+[
+    {
+        "attack": "right",
+        "gladiator": 1,
+        "market": 6,
+        "resources": {
+            "soldier": 1,
+            "builder": 2,
+            "servant": 3,
+            "civilian": 1,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 1,
+        "market": 2,
+        "resources": {
+            "soldier": 2,
+            "builder": 2,
+            "servant": 3,
+            "civilian": 1,
+            "stone": 0
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 3,
+        "market": 2,
+        "resources": {
+            "soldier": 1,
+            "builder": 3,
+            "servant": 1,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 3,
+        "market": 2,
+        "resources": {
+            "soldier": 2,
+            "builder": 1,
+            "servant": 2,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 2,
+        "market": 2,
+        "resources": {
+            "soldier": 1,
+            "builder": 2,
+            "servant": 2,
+            "civilian": 2,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 1,
+        "market": 6,
+        "resources": {
+            "soldier": 2,
+            "builder": 1,
+            "servant": 1,
+            "civilian": 2,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 1,
+        "market": 4,
+        "resources": {
+            "soldier": 2,
+            "builder": 1,
+            "servant": 1,
+            "civilian": 2,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 1,
+        "market": 6,
+        "resources": {
+            "soldier": 2,
+            "builder": 3,
+            "servant": 1,
+            "civilian": 1,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 3,
+        "market": 1,
+        "resources": {
+            "soldier": 1,
+            "builder": 1,
+            "servant": 3,
+            "civilian": 2,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 2,
+        "market": 3,
+        "resources": {
+            "soldier": 2,
+            "builder": 2,
+            "servant": 2,
+            "civilian": 1,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 2,
+        "market": 1,
+        "resources": {
+            "soldier": 1,
+            "builder": 2,
+            "servant": 2,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 3,
+        "market": 5,
+        "resources": {
+            "soldier": 1,
+            "builder": 1,
+            "servant": 3,
+            "civilian": 2,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 2,
+        "market": 5,
+        "resources": {
+            "soldier": 2,
+            "builder": 2,
+            "servant": 1,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 2,
+        "market": 1,
+        "resources": {
+            "soldier": 2,
+            "builder": 2,
+            "servant": 1,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 1,
+        "market": 4,
+        "resources": {
+            "soldier": 1,
+            "builder": 2,
+            "servant": 3,
+            "civilian": 1,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 1,
+        "market": 1,
+        "resources": {
+            "soldier": 2,
+            "builder": 1,
+            "servant": 1,
+            "civilian": 2,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 1,
+        "market": 1,
+        "resources": {
+            "soldier": 2,
+            "builder": 2,
+            "servant": 3,
+            "civilian": 1,
+            "stone": 0
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 3,
+        "market": 3,
+        "resources": {
+            "soldier": 1,
+            "builder": 1,
+            "servant": 3,
+            "civilian": 2,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 2,
+        "market": 3,
+        "resources": {
+            "soldier": 1,
+            "builder": 2,
+            "servant": 2,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 1,
+        "market": 4,
+        "resources": {
+            "soldier": 2,
+            "builder": 3,
+            "servant": 1,
+            "civilian": 1,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 2,
+        "market": 2,
+        "resources": {
+            "soldier": 1,
+            "builder": 2,
+            "servant": 2,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 1,
+        "market": 6,
+        "resources": {
+            "soldier": 2,
+            "builder": 2,
+            "servant": 3,
+            "civilian": 1,
+            "stone": 0
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 2,
+        "market": 3,
+        "resources": {
+            "soldier": 1,
+            "builder": 2,
+            "servant": 2,
+            "civilian": 2,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 2,
+        "market": 5,
+        "resources": {
+            "soldier": 1,
+            "builder": 2,
+            "servant": 2,
+            "civilian": 2,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 3,
+        "market": 3,
+        "resources": {
+            "soldier": 2,
+            "builder": 1,
+            "servant": 2,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 2,
+        "market": 1,
+        "resources": {
+            "soldier": 2,
+            "builder": 2,
+            "servant": 2,
+            "civilian": 1,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 3,
+        "market": 2,
+        "resources": {
+            "soldier": 1,
+            "builder": 1,
+            "servant": 3,
+            "civilian": 2,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 2,
+        "market": 1,
+        "resources": {
+            "soldier": 1,
+            "builder": 2,
+            "servant": 2,
+            "civilian": 2,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 3,
+        "market": 1,
+        "resources": {
+            "soldier": 1,
+            "builder": 3,
+            "servant": 1,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 1,
+        "market": 4,
+        "resources": {
+            "soldier": 2,
+            "builder": 2,
+            "servant": 3,
+            "civilian": 1,
+            "stone": 0
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 2,
+        "market": 3,
+        "resources": {
+            "soldier": 2,
+            "builder": 2,
+            "servant": 1,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 2,
+        "market": 5,
+        "resources": {
+            "soldier": 1,
+            "builder": 2,
+            "servant": 2,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 2,
+        "market": 4,
+        "resources": {
+            "soldier": 2,
+            "builder": 1,
+            "servant": 2,
+            "civilian": 2,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 3,
+        "market": 3,
+        "resources": {
+            "soldier": 1,
+            "builder": 3,
+            "servant": 1,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 2,
+        "market": 2,
+        "resources": {
+            "soldier": 2,
+            "builder": 2,
+            "servant": 2,
+            "civilian": 1,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 2,
+        "market": 2,
+        "resources": {
+            "soldier": 2,
+            "builder": 2,
+            "servant": 1,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 3,
+        "market": 4,
+        "resources": {
+            "soldier": 2,
+            "builder": 1,
+            "servant": 2,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 1,
+        "market": 2,
+        "resources": {
+            "soldier": 1,
+            "builder": 2,
+            "servant": 3,
+            "civilian": 1,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 3,
+        "market": 1,
+        "resources": {
+            "soldier": 2,
+            "builder": 1,
+            "servant": 2,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 1,
+        "market": 1,
+        "resources": {
+            "soldier": 1,
+            "builder": 2,
+            "servant": 3,
+            "civilian": 1,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 2,
+        "market": 1,
+        "resources": {
+            "soldier": 2,
+            "builder": 1,
+            "servant": 2,
+            "civilian": 2,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 2,
+        "market": 2,
+        "resources": {
+            "soldier": 2,
+            "builder": 1,
+            "servant": 2,
+            "civilian": 2,
+            "stone": 1
+        }
+    },    
+    {
+        "attack": "right",
+        "gladiator": 1,
+        "market": 2,
+        "resources": {
+            "soldier": 2,
+            "builder": 3,
+            "servant": 1,
+            "civilian": 1,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 1,
+        "market": 1,
+        "resources": {
+            "soldier": 2,
+            "builder": 3,
+            "servant": 1,
+            "civilian": 1,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "right",
+        "gladiator": 2,
+        "market": 3,
+        "resources": {
+            "soldier": 2,
+            "builder": 1,
+            "servant": 2,
+            "civilian": 2,
+            "stone": 1
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 3,
+        "market": 4,
+        "resources": {
+            "soldier": 1,
+            "builder": 3,
+            "servant": 1,
+            "civilian": 1,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "left",
+        "gladiator": 1,
+        "market": 2,
+        "resources": {
+            "soldier": 2,
+            "builder": 1,
+            "servant": 1,
+            "civilian": 2,
+            "stone": 2
+        }
+    },
+    {
+        "attack": "middle",
+        "gladiator": 2,
+        "market": 4,
+        "resources": {
+            "soldier": 2,
+            "builder": 2,
+            "servant": 2,
+            "civilian": 1,
+            "stone": 1
+        }
+    }
+]

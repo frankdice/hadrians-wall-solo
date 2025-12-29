@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadrian's Wall - Game Helper</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Column -->
+        <div class="column left-column">
+            <h2>Game Controls</h2>
+            <button id="new-game-btn">New Game</button>
+            <div id="difficulty-display" style="display: none;"></div>
+            
+            <h2>Ongoing Resources</h2>
+            <div id="ongoing-resources-container">
+                <div class="ongoing-resource-item">
+                    <span class="ongoing-resource-name">Stone</span>
+                    <div class="resource-controls">
+                        <button class="resource-btn minus" onclick="updateOngoingResource('stone', -1)">-</button>
+                        <span class="resource-count" id="ongoing-stone-count">1</span>
+                        <button class="resource-btn plus" onclick="updateOngoingResource('stone', 1)">+</button>
+                    </div>
+                </div>
+                <div class="ongoing-resource-item">
+                    <span class="ongoing-resource-name">Builder</span>
+                    <div class="resource-controls">
+                        <button class="resource-btn minus" onclick="updateOngoingResource('builder', -1)">-</button>
+                        <span class="resource-count" id="ongoing-builder-count">0</span>
+                        <button class="resource-btn plus" onclick="updateOngoingResource('builder', 1)">+</button>
+                    </div>
+                </div>
+                <div class="ongoing-resource-item">
+                    <span class="ongoing-resource-name">Civilian</span>
+                    <div class="resource-controls">
+                        <button class="resource-btn minus" onclick="updateOngoingResource('civilian', -1)">-</button>
+                        <span class="resource-count" id="ongoing-civilian-count">0</span>
+                        <button class="resource-btn plus" onclick="updateOngoingResource('civilian', 1)">+</button>
+                    </div>
+                </div>
+                <div class="ongoing-resource-item">
+                    <span class="ongoing-resource-name">Renown</span>
+                    <div class="resource-controls">
+                        <button class="resource-btn minus" onclick="updateOngoingResource('renown', -1)">-</button>
+                        <span class="resource-count" id="ongoing-renown-count">0</span>
+                        <button class="resource-btn plus" onclick="updateOngoingResource('renown', 1)">+</button>
+                    </div>
+                </div>
+                <div class="ongoing-resource-item">
+                    <span class="ongoing-resource-name">Piety</span>
+                    <div class="resource-controls">
+                        <button class="resource-btn minus" onclick="updateOngoingResource('piety', -1)">-</button>
+                        <span class="resource-count" id="ongoing-piety-count">0</span>
+                        <button class="resource-btn plus" onclick="updateOngoingResource('piety', 1)">+</button>
+                    </div>
+                </div>
+                <div class="ongoing-resource-item">
+                    <span class="ongoing-resource-name">Valour</span>
+                    <div class="resource-controls">
+                        <button class="resource-btn minus" onclick="updateOngoingResource('valour', -1)">-</button>
+                        <span class="resource-count" id="ongoing-valour-count">0</span>
+                        <button class="resource-btn plus" onclick="updateOngoingResource('valour', 1)">+</button>
+                    </div>
+                </div>
+                <div class="ongoing-resource-item">
+                    <span class="ongoing-resource-name">Discipline</span>
+                    <div class="resource-controls">
+                        <button class="resource-btn minus" onclick="updateOngoingResource('discipline', -1)">-</button>
+                        <span class="resource-count" id="ongoing-discipline-count">0</span>
+                        <button class="resource-btn plus" onclick="updateOngoingResource('discipline', 1)">+</button>
+                    </div>
+                </div>
+                <div class="ongoing-resource-item">
+                    <span class="ongoing-resource-name">Pict Attack</span>
+                    <div class="resource-controls">
+                        <button class="resource-btn minus" onclick="updateOngoingResource('pictAttack', -1)">-</button>
+                        <span class="resource-count" id="ongoing-pictAttack-count">0</span>
+                        <button class="resource-btn plus" onclick="updateOngoingResource('pictAttack', 1)">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Center Column -->
+        <div class="column center-column">
+            <h2>Game Board</h2>
+            
+            <div id="rounds-container" class="rounds-container">
+                <!-- Round boxes will be generated here -->
+            </div>
+            
+            <div class="game-info">
+                <button id="next-round-btn" style="display: none;">Pict Attack</button>
+            </div>
+            
+            <div id="pict-attack-display"></div>
+            
+            <div id="game-board">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>Choose Your Card</h3>
+                    <button id="gladiator-battle-btn" onclick="gladiatorBattle()" style="margin: 0; display: none; padding: 8px 16px; font-size: 12px; width: auto;">Gladiator Battle</button>
+                </div>
+                <div id="player-card-selection" class="player-card-selection">
+                    <!-- Player card options will be displayed here -->
+                </div>
+                
+                <div style="display: flex; gap: 20px; align-items: flex-start; margin-top: 20px; justify-content: space-between;">
+                    <div style="display: flex; gap: 20px;">
+                        <div id="rejected-card-container">
+                            <!-- Rejected card will be displayed here -->
+                        </div>
+                        
+                        <div id="neutral-cards-container" class="neutral-cards-container">
+                            <!-- Neutral cards will be displayed here -->
+                        </div>
+                    </div>
+                    
+                    <div id="gladiator-battle-display"></div>
+                </div>
+
+            </div>
+            <div id="active-card-container" style="margin-top: 20px;">
+                <!-- Active card will be displayed here -->
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="column right-column">
+            <h2>Resources</h2>
+            <div id="resources-container">
+                <div class="resource-item soldier">
+                    <span class="resource-name">Soldier</span>
+                    <div class="resource-controls">
+                        <button class="resource-btn minus" onclick="updateResource('soldier', -1)">-</button>
+                        <span class="resource-count" id="soldier-count">0</span>
+                        <button class="resource-btn plus" onclick="updateResource('soldier', 1)">+</button>
+                    </div>
+                </div>
+                <div class="resource-item builder">
+                    <span class="resource-name">Builder</span>
+                    <div class="resource-controls">
+                        <button class="resource-btn minus" onclick="updateResource('builder', -1)">-</button>
+                        <span class="resource-count" id="builder-count">0</span>
+                        <button class="resource-btn plus" onclick="updateResource('builder', 1)">+</button>
+                    </div>
+                </div>
+                <div class="resource-item servant">
+                    <span class="resource-name">Servant</span>
+                    <div class="resource-controls">
+                        <button class="resource-btn minus" onclick="updateResource('servant', -1)">-</button>
+                        <span class="resource-count" id="servant-count">0</span>
+                        <button class="resource-btn plus" onclick="updateResource('servant', 1)">+</button>
+                    </div>
+                </div>
+                <div class="resource-item civilian">
+                    <span class="resource-name">Civilian</span>
+                    <div class="resource-controls">
+                        <button class="resource-btn minus" onclick="updateResource('civilian', -1)">-</button>
+                        <span class="resource-count" id="civilian-count">0</span>
+                        <button class="resource-btn plus" onclick="updateResource('civilian', 1)">+</button>
+                    </div>
+                </div>
+                <div class="resource-item stone">
+                    <span class="resource-name">Stone</span>
+                    <div class="resource-controls">
+                        <button class="resource-btn minus" onclick="updateResource('stone', -1)">-</button>
+                        <span class="resource-count" id="stone-count">0</span>
+                        <button class="resource-btn plus" onclick="updateResource('stone', 1)">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="game.js"></script>
+</body>
+</html>
